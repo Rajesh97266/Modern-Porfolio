@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -33,17 +34,43 @@ const Contact = () => {
       setErrMsg("Plese give your Subject!");
     } else if (message === "") {
       setErrMsg("Message is required!");
-    } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      return;
     }
+
+    // Prepare the email parameters
+    const emailParams = {
+      user_name: username, 
+      user_email: email,
+      phone_number: phoneNumber,
+      subject: subject,
+      message: message,
+    };
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        emailParams,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSuccessMsg(`Thank you, ${username}! Your message has been sent.`);
+          setErrMsg("");
+          setUsername("");
+          setPhoneNumber("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          setErrMsg("Failed to send message. Please try again.");
+        }
+      );
   };
   return (
     <section
@@ -164,6 +191,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;
