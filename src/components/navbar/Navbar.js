@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div className='ml-4 cursor-pointer'>
+      <div className="ml-4 cursor-pointer">
         <img src={logo} alt="logo" />
       </div>
       <div>
@@ -45,9 +45,11 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  As a Frontend Developer, I specialize in creating interactive,
+                  responsive, and visually appealing web applications. My focus
+                  is on crafting seamless user experiences using modern
+                  frameworks, optimized performance, and intuitive design
+                  principles.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
