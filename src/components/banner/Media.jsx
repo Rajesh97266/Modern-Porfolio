@@ -1,21 +1,37 @@
 import React from 'react'
 import {  FaLinkedinIn, FaReact, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs, SiFrontendmentor } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
       <div>
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
+          <a
+            href="https://github.com/Rajesh97266"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
             <FaGithub />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a
+            href="https://www.frontendmentor.io/profile/Rajesh97266"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
             <SiFrontendmentor />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rajesh-m-925388ba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bannerIcon"
+          >
             <FaLinkedinIn />
-          </span>
+          </a>
         </div>
       </div>
       <div>
@@ -34,6 +50,9 @@ const Media = () => {
           </span>
           <span className="bannerIcon">
             <SiFigma />
+          </span>
+          <span className="bannerIcon">
+            <IoLogoJavascript />
           </span>
         </div>
       </div>
