@@ -1,7 +1,8 @@
 import React from "react";
 import Title from "../layouts/Title";
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+
 import ProjectsCard from "./ProjectsCard";
+import { realtimeChat, chatGpt, portfolio } from "../../assets/index";
 
 const Projects = () => {
   return (
@@ -19,17 +20,23 @@ const Projects = () => {
         <ProjectsCard
           title="Social Media Clone"
           des="A fully functional social media platform with user authentication, posts, likes, and comments."
-          src={projectOne}
+          src={realtimeChat}
+          githubLink="https://github.com/Rajesh97266/Fullstack-Chat-App"
+          projectLink="https://fullstack-chat-app-xq65.onrender.com/login"
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des="An online shopping platform with product listings, cart functionality, and secure checkout."
-          src={projectTwo}
+          title="ChatGPT  Clone"
+          des="An AI-powered chatbot that mimics ChatGPT's capabilities using OpenAI API. Features include real-time responses, conversational memory, and user-friendly UI."
+          src={chatGpt}
+          githubLink="https://github.com/Rajesh97266/Chatgpt-App"
+          projectLink="https://chatgpt-app-clone-three.vercel.app/"
         />
         <ProjectsCard
-          title="Chatting App"
-          des="A real-time messaging app with one-on-one and group chat features, powered by WebSockets."
-          src={projectThree}
+          title="Portfolio Project"
+          des="A personal portfolio website showcasing projects, skills, and experiences. Built with React, Tailwind CSS, and optimized for responsiveness."
+          src={portfolio}
+          githubLink="https://github.com/Rajesh97266/Modern-Porfolio"
+          projectLink="https://ecommerce-website.example.com"
         />
       </div>
     </section>

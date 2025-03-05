@@ -7,6 +7,10 @@ import testimonialOne from "./images/testmonial/testimonialOne.png";
 import testimonialTwo from "./images/testmonial/testimonialTwo.png";
 import quote from "./images/testmonial/quote.png";
 import contactImg from "./images/contact/contactImg.png";
+import RImg from "./images/R img.webp"
+import realtimeChat from "./images/projects/realtime chat.png"
+import chatGpt from "./images/projects/chatgpt.png"
+import portfolio from "./images/projects/portfoiloImage.png"
 
 export {
   logo,
@@ -18,4 +22,8 @@ export {
   testimonialTwo,
   quote,
   contactImg,
+  RImg,
+  realtimeChat,
+  chatGpt,
+  portfolio
 };
