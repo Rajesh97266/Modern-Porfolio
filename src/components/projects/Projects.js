@@ -36,7 +36,7 @@ const Projects = () => {
           des="A personal portfolio website showcasing projects, skills, and experiences. Built with React, Tailwind CSS, and optimized for responsiveness."
           src={portfolio}
           githubLink="https://github.com/Rajesh97266/Modern-Porfolio"
-          projectLink="https://ecommerce-website.example.com"
+          projectLink="https://modern-porfolio-drab.vercel.app/"
         />
       </div>
     </section>
