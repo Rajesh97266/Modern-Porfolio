@@ -21,16 +21,21 @@ const Experience = () => {
             result="Chennai"
             des="Developing and delivering high-quality web applications for clients across various industries. Specializing in front-end technologies, responsive design, and performance optimization."
           />
-          
+
           <ResumeCard
             title="Front-end Developer"
             subTitle="CMRL - (2019 - 2023)"
             result="Chennai"
             des="Built and maintained dynamic, user-friendly web applications using modern front-end frameworks. Focused on enhancing UI/UX, accessibility, and overall performance."
           />
+          <ResumeCard
+            title="Design Executive"
+            subTitle="TAFE - (2016 - 2019)"
+            result="Chennai"
+            des="Worked as an AutoCAD and CATIA Engineer focusing on designing and developing engineering models, improving design workflows, and enhancing CAD automation."
+          />
         </div>
       </div>
-      
     </motion.div>
   );
 };
