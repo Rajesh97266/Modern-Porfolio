@@ -21,15 +21,10 @@ const Experience = () => {
             result="Chennai"
             des="Developing and delivering high-quality web applications for clients across various industries. Specializing in front-end technologies, responsive design, and performance optimization."
           />
-          <ResumeCard
-            title="Software Engineer"
-            subTitle="Expeditech INC - (2024)"
-            result="USA"
-            des="Built a centralized IT Infrastructure Management by unifying IT service and management tools on a single platform."
-          />
+          
           <ResumeCard
             title="Front-end Developer"
-            subTitle="CMRL - (2023 - 2024)"
+            subTitle="CMRL - (2019 - 2023)"
             result="Chennai"
             des="Built and maintained dynamic, user-friendly web applications using modern front-end frameworks. Focused on enhancing UI/UX, accessibility, and overall performance."
           />
